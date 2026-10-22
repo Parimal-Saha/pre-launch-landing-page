@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   SUGAR SHADE design tokens
+   Primary:   neon #D7FF06 · electric #6900FF · pink #FC3CA3
+   Secondary: sun #FFE600 · blaze #FF5A00 · sky #00B8FF
+   Neutral:   ink #1E1E1E · paper #F7F7F7
+------------------------------------------------------------------- */
+@theme {
+  --color-neon: #d7ff06;
+  --color-electric: #6900ff;
+  --color-pink: #fc3ca3;
+  --color-sun: #ffe600;
+  --color-blaze: #ff5a00;
+  --color-sky: #00b8ff;
+  --color-ink: #1e1e1e;
+  --color-paper: #f7f7f7;
+
+  /* Montserrat Black (display) · Plus Jakarta Sans (body) */
+  --font-display: var(--font-display-face), "Arial Black", Impact, sans-serif;
+  --font-sans: var(--font-pjs), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --text-display: clamp(2.75rem, 8vw, 6.5rem);
+  --text-display-sm: clamp(1.9rem, 4vw, 3.25rem);
+  --text-lede: clamp(1.05rem, 1.6vw, 1.3rem);
+
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ------------------------------ base ------------------------------ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-electric);
+  color: var(--color-neon);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-electric);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Display headings — heavy uppercase grotesque with tight tracking */
+.display {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+/* Italic accent inside a display heading (the demo's second-line style) */
+.display em {
+  font-style: italic;
+  font-weight: 900;
+}
+
+/* Display face that keeps the brand's mixed-case wording (product names) */
+.display-mixed {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: none;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+}
+
+.eyebrow {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+}
+
+.lede {
+  font-size: var(--text-lede);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+/* Die-cut sticker feel for brand sticker art */
+.sticker {
+  filter: drop-shadow(0 10px 18px rgba(30, 30, 30, 0.18));
+}
+
+/* Chunky editorial rule */
+.rule-ink {
+  border-color: var(--color-ink);
+}
+
+/* --------------------------- marquee ------------------------------ */
+@keyframes ss-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: ss-marquee 32s linear infinite;
+}
+
+/* ------------------------- entrances ------------------------------ */
+@keyframes ss-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: ss-rise 0.7s var(--ease-out-back) both;
+}
+
+/* Respect reduced motion everywhere */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .marquee-track {
+    animation: none;
+    transform: none;
+  }
+  .rise {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}

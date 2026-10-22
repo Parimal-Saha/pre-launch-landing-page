@@ -7,10 +7,10 @@ mystery box), collect explicit-consent waitlist signups, and record referral sig
 Built with **Next.js 16 (App Router) · TypeScript strict · Tailwind CSS v4 · Zod · Supabase**.
 
 **Why this stack:** the core requirement is a *secure server-side form endpoint* plus persistent
-storage with DB constraints, future Shopify/email/referral integrations, and Vercel deployment.
-Next.js route handlers give colocated API logic with first-class Vercel support; Astro would ship
-less JS but adds a second toolchain for the same single client island. No state-management,
-animation, or component libraries — CSS-only motion.
+storage, email OTP verification, and DB constraints for a short pre-launch run. Netlify Free
+supports Next.js App Router and custom domains with SSL; it is a lower-cost fit than a paid Vercel
+plan for a 1–2 month campaign. Supabase Free avoids a database migration and is adequate for a
+small waitlist, but low activity can pause the project and production OTP requires custom SMTP.
 
 ## Project structure
 
@@ -21,7 +21,8 @@ animation, or component libraries — CSS-only motion.
 │   └── og.jpg             # Open Graph image (1200×630)
 ├── src/
 │   ├── app/
-│   │   ├── api/waitlist/route.ts   # POST signup · GET referral counts
+│   │   ├── api/otp/route.ts        # rate-limited OTP send
+│   │   ├── api/waitlist/route.ts   # verified POST signup · GET qualified referral counts
 │   │   ├── privacy/page.tsx        # privacy notice
 │   │   ├── robots.ts · sitemap.ts  # pre-launch indexing config
 │   │   ├── layout.tsx · page.tsx · globals.css
@@ -55,8 +56,15 @@ failures never masquerade as success.
 |---|---|---|
 | `SUPABASE_URL` | Supabase → Settings → API | waitlist database URL |
 | `SUPABASE_SERVICE_ROLE_KEY` | same | server-only write access (never client-side) |
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase → Settings → API | browser OTP endpoint |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | same | public Auth key; table remains protected by RLS |
+| `REFERRAL_ALLOWED_DOMAINS` | deployment environment | comma-separated eligible referral email domains |
+| `NEXT_PUBLIC_SITE_URL` | Netlify assigned host | canonical URL and sitemap origin |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | brand configuration | public contact email |
 
-Email: **no provider selected** — `src/lib/email.ts` is a no-op seam by design.
+Email OTP: configure custom SMTP under Supabase Auth → SMTP Settings. The sender is configurable
+there; the initial sender is `aadhanaan2@gmail.com`. Never commit SMTP credentials or the service
+role key.
 
 ## Referral program
 
@@ -64,11 +72,12 @@ Real mechanics, honest limits:
 
 1. Every signup gets a unique 8-character code (`referral_code`, unique-indexed).
 2. `?ref=CODE` invite links are captured at submit time and stored as `referred_by`.
-3. `GET /api/waitlist?code=CODE` returns the stored friend-signup count for that code only; it
-   does not verify email ownership or a qualifying purchase.
-4. `+10%` per stored friend signup, capped at `+30%` (three friends). This stacks with the
-   15% Price Cut perk for up to 45% off an eligible order. The store must enforce final order
-   limits, expiry, qualifying purchase, and abuse rules before launch.
+3. Joining requires email OTP verification. Only verified referrals from configured eligible
+   domains count toward rewards; the progress endpoint exposes only a referral's count.
+4. `+10%` per qualified referral, capped at `+30%`, applies to the first qualifying order only.
+   It stacks with the 15% Price Cut perk on that first order (maximum 45%). For the Delivery Treat,
+   the maximum referral discount is 30% on order one; free delivery covers the first five
+   qualifying orders. Shopify checkout/order enforcement is not included in this app.
 
 There is no points system and no fake progress: a friend only counts once their signup is stored.
 
@@ -88,8 +97,8 @@ python tools/mock_supabase.py 8321        # PostgREST-shaped mock (POST + filter
 | Type check | `npx tsc --noEmit` | ✅ clean |
 | Production build | `npm run build` | ✅ all routes generate |
 | Lint | `npx eslint src --max-warnings 0` | ✅ clean |
-| API flows (signup, duplicate, honeypot, rate limit, referral count, invalid codes) | curl against mock | ✅ verified |
-| Browser (360–1440px, perk select, validation, success panel, referral link) | manual | ✅ verified |
+| API / browser OTP end-to-end | Requires live SMTP and deployed credentials | ⏳ not yet verified |
+| Supabase table access | Read-only dashboard check | ✅ RLS on; anon/authenticated have no table access |
 
 ## Security posture
 
@@ -103,24 +112,24 @@ python tools/mock_supabase.py 8321        # PostgREST-shaped mock (POST + filter
 
 ### Production hardening (documented, not yet done)
 
-1. Swap the in-memory limiter for Upstash/Redis or Vercel WAF rules (multi-region correctness).
+1. Swap the in-memory limiter for a shared store or platform-level protection (multi-instance correctness).
 2. Connect an email provider behind `src/lib/email.ts`.
 3. Add a Supabase DB password rotation reminder / least-privilege review.
 
-## Deployment (Vercel)
+## Deployment (Netlify)
 
-1. Import the repo; framework preset: Next.js (no overrides needed).
-2. Add `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY` as server-side Vercel
-   environment variables. Use the production database only for Production;
-   use a separate test Supabase project for Preview. Never reuse the production
-   service-role key in preview deployments.
-3. Deploy a preview URL → run the acceptance checks (below) on it using the
-   isolated test database.
-4. Add `sugarshade.pk` per `docs/dns-migration-checklist.md` — **only with the owner's approval**.
+1. Import the public GitHub repo; Netlify auto-detects the Next.js App Router.
+2. Add `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `NEXT_PUBLIC_SUPABASE_URL`,
+   `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SITE_URL`, and `REFERRAL_ALLOWED_DOMAINS` as
+   Netlify environment variables. Do not expose production secrets to Deploy Previews.
+3. Keep Netlify auto-recharge off. Free has a hard limit and pauses sites rather than charging
+   overages; monitor usage during the campaign.
+4. Test OTP delivery, verification, eligible-domain referral counts, privacy copy and mobile layout
+   on the assigned `*.netlify.app` host. Do not connect `sugarshade.pk` until separately authorized.
 
-**Indexing:** production is indexable by choice (`robots.ts` documents the one-line flip to
-disallow). Vercel previews are auto-`noindex` and `metadataBase` pins canonical URLs to
-`https://sugarshade.pk`, so preview hosts never leak into SEO.
+**Indexing:** `robots.ts` permits indexing only when Netlify sets `CONTEXT=production`; deploy
+previews are explicitly disallowed. Canonical metadata remains configurable and should be set to
+the assigned production `*.netlify.app` URL until a custom domain is authorized and connected.
 
 ## Brand assets & fonts
 
@@ -140,7 +149,7 @@ directly on the page like the reference.
 
 ## Rollback
 
-- Deployments: Vercel keeps every deployment — promote any previous one.
+- Deployments: use Netlify deploy history for rollback.
 - DNS: restore the zone export taken in Phase 0 of the DNS checklist.
 
 ## Further reading
