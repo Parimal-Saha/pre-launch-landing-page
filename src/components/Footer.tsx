@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SITE } from "@/lib/site";
+import { SITE, SOCIAL_LINKS } from "@/lib/site";
 
 // Frozen at module load so the page stays deterministically prerenderable.
 const YEAR = new Date().getFullYear();
@@ -51,7 +51,23 @@ export function Footer() {
             </a>
           </nav>
 
-          <p className="text-sm text-paper/60">Social links coming soon.</p>
+          <nav aria-label="Social media" className="flex flex-col text-sm font-bold">
+            {SOCIAL_LINKS.length ? (
+              SOCIAL_LINKS.map(({ label, url }) => (
+                <a
+                  key={label}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="-mx-2 rounded-lg px-2 py-2.5 text-paper/80 transition-colors hover:text-neon"
+                >
+                  {label}
+                </a>
+              ))
+            ) : (
+              <p className="px-2 py-2.5 text-paper/60">Social links coming soon.</p>
+            )}
+          </nav>
         </div>
 
         <div className="mt-12 flex flex-col gap-3 border-t border-paper/15 pt-6 text-xs text-paper/50 sm:flex-row sm:items-center sm:justify-between">

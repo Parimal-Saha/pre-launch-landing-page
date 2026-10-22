@@ -61,6 +61,7 @@ failures never masquerade as success.
 | `REFERRAL_ALLOWED_DOMAINS` | deployment environment | comma-separated eligible referral email domains |
 | `NEXT_PUBLIC_SITE_URL` | Netlify assigned host | canonical URL and sitemap origin |
 | `NEXT_PUBLIC_CONTACT_EMAIL` | brand configuration | public contact email |
+| `NEXT_PUBLIC_INSTAGRAM_URL`, `NEXT_PUBLIC_TIKTOK_URL`, `NEXT_PUBLIC_FACEBOOK_URL` | deployment environment | optional official social URLs; blank values keep “coming soon” |
 
 Email OTP: configure custom SMTP under Supabase Auth → SMTP Settings. The sender is configurable
 there; the initial sender is `aadhanaan2@gmail.com`. Never commit SMTP credentials or the service
