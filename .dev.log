@@ -1,0 +1,2584 @@
+
+> sugarshade@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.2 (Turbopack)
+- Local:         http://localhost:57795
+- Network:       http://192.168.100.12:57795
+- Environments: .env.local
+✓ Ready in 723ms
+✓ Running next.config.ts took 55ms
+- Cache Components enabled
+- Partial Prefetching enabled
+
+ GET / 200 in 493ms (next.js: 3ms, application-code: 490ms)
+ GET / 200 in 970ms (next.js: 295ms, application-code: 675ms)
+ GET / 200 in 155ms (next.js: 1.7ms, application-code: 154ms)
+ POST /api/waitlist 400 in 243ms (next.js: 194ms, application-code: 50ms)
+ POST /api/waitlist 400 in 19ms (next.js: 4ms, application-code: 16ms)
+ GET / 200 in 409ms (next.js: 5ms, application-code: 404ms)
+ GET / 200 in 1044ms (next.js: 80ms, application-code: 964ms)
+ GET / 200 in 331ms (next.js: 6ms, application-code: 325ms)
+ GET / 200 in 289ms (next.js: 8ms, application-code: 281ms)
+ GET / 200 in 787ms (next.js: 67ms, application-code: 720ms)
+ GET / 200 in 313ms (next.js: 3ms, application-code: 310ms)
+ GET / 200 in 246ms (next.js: 4ms, application-code: 242ms)
+ GET / 200 in 355ms (next.js: 11ms, application-code: 344ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headRenderTree={{...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <__next_metadata_boundary__>
+                        <div
+                          hidden={true}
+-                         bis_skin_checked="1"
+                        >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="rokkitt_f3...">
+                          <body
+                            className="flex min-h-full flex-col antialiased"
+-                           __processed_be9742ee-b438-4fe2-9732-6f06cd038d01__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ScrollHandler renderTree={{...}}>
+      <InnerScrollHandler scrollRef={{scrollRef:null, ...}} renderTree={{...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/#top" tree={[...]} params={{}} renderTree={{...}} segmentPath={[...]} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <Home>
+                          <Header>
+                            <header className="sticky top...">
+                              <div
+                                className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-5 ..."
+-                               bis_skin_checked="1"
+                              >
+                                <LinkComponent>
+                                <nav>
+                                <div
+                                  className="flex items-center gap-3"
+-                                 bis_skin_checked="1"
+                                >
+                          <main className="flex-1">
+                            <Hero>
+                              <section id="top" className="relative o...">
+                                <div
+                                  aria-hidden={true}
+                                  className="pointer-events-none absolute inset-y-0 right-0 hidden w-[38%] border-l-2 ..."
+                                  style={{backgroundImage:"url(/asset...",backgroundSize:"560px"}}
+-                                 bis_skin_checked="1"
+                                >
+                                <div
+                                  className="relative mx-auto grid w-full max-w-6xl gap-12 px-5 pt-14 pb-16 sm:px-8 md..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="rise md:col-span-6 md:pt-6"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <p>
+                                    <h1>
+                                    <p>
+                                    <div
+                                      className="mt-8 flex flex-wrap items-center gap-4"
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <div
+                                    className="relative md:col-span-6 md:pt-2"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="relative mx-auto w-full max-w-lg rotate-[-2deg]"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className="overflow-hidden rounded-[1.75rem] border-2 border-ink bg-white shad..."
+-                                       bis_skin_checked="1"
+                                      >
+                                      ...
+                            <Marquee>
+                              <div
+                                aria-hidden={true}
+                                className="overflow-hidden border-y-2 border-ink bg-ink py-4"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="marquee-track"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                            <Join>
+                              <section id="join" className="relative s...">
+                                <div
+                                  aria-hidden={true}
+                                  className="pointer-events-none absolute top-0 right-0 hidden h-72 w-72 border-b-2 bo..."
+                                  style={{backgroundImage:"url(/asset...",backgroundSize:"420px"}}
+-                                 bis_skin_checked="1"
+                                >
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <WaitlistCard>
+                                    <div
+                                      className="mt-10"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <fieldset id="perk-cards" className="scroll-mt-24">
+                                        <legend>
+                                        <div
+                                          className="grid gap-5 md:grid-cols-3"
+-                                         bis_skin_checked="1"
+                                        >
+                                      <div
+                                        className="mt-12"
+-                                       bis_skin_checked="1"
+                                      >
+                                      <form onSubmit={function handleSubmit} noValidate={true} id="almost-there" ...>
+                                        <div
+                                          className="grid gap-8 md:grid-cols-12"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="md:col-span-5"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <p>
+                                            <div
+                                              className="mt-3 rounded-2xl border-2 border-dashed border-ink/30 bg-pape..."
+-                                             bis_skin_checked="1"
+                                            >
+                                          <div
+                                            className="md:col-span-7"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h3>
+                                            <p>
+                                            <label>
+                                            <input>
+                                            <p>
+                                            <label>
+                                            <div
+                                              aria-hidden={true}
+                                              className="absolute -left-[9999px] h-px w-px overflow-hidden"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center"
+-                                             bis_skin_checked="1"
+                                            >
+                                        ...
+                            <Collection>
+                              <section id="collection" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-6"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <div
+                                    className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <a href="#join" className="flex flex-...">
+                                      <div
+-                                       bis_skin_checked="1"
+                                      >
+                                      ...
+                            <Story>
+                              <section id="story" className="scroll-mt-...">
+                                <div
+                                  className="relative mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 sm:px-8 md:grid-..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="md:col-span-5"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="relative inline-flex flex-wrap items-end gap-5"
+                                      aria-hidden={true}
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="md:col-span-7 md:pt-8"
+-                                   bis_skin_checked="1"
+                                  >
+                            <Referral>
+                              <section id="referral" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <ol>
+                                  <div
+                                    className="mt-10 flex flex-wrap items-center gap-4 rounded-2xl border-2 border-ink..."
+-                                   bis_skin_checked="1"
+                                  >
+                            <LaunchBand>
+                              <section className="border-y-2...">
+                                <div
+                                  className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 md:g..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="relative mx-auto w-full max-w-sm rotate-[2.5deg] md:mx-0"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                          <Footer>
+                            <footer className="bg-ink tex...">
+                              <div
+                                className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                                  ...
+                                <div
+                                  className="mt-12 flex flex-col gap-3 border-t border-paper/15 pt-6 text-xs text-pape..."
+-                                 bis_skin_checked="1"
+                                >
+                      ...
+                    ...
+        ...
+ 
+✓ Compiled in 464ms
+ GET / 200 in 1126ms (next.js: 62ms, application-code: 1065ms)
+ GET / 200 in 926ms (next.js: 6ms, application-code: 919ms)
+ GET / 200 in 719ms (next.js: 5ms, application-code: 715ms)
+ GET / 200 in 557ms (next.js: 9ms, application-code: 547ms)
+ GET / 200 in 288ms (next.js: 13ms, application-code: 275ms)
+ GET / 200 in 228ms (next.js: 3ms, application-code: 225ms)
+ GET / 200 in 480ms (next.js: 8ms, application-code: 473ms)
+ GET / 200 in 341ms (next.js: 3ms, application-code: 339ms)
+ GET / 200 in 831ms (next.js: 6ms, application-code: 824ms)
+ GET / 200 in 446ms (next.js: 5ms, application-code: 441ms)
+ POST /api/waitlist 200 in 324ms (next.js: 5ms, application-code: 319ms)
+ GET /api/waitlist?code=Z8EYD3PN 200 in 83ms (next.js: 7ms, application-code: 77ms)
+ GET /?ref=Z8EYD3PN 200 in 295ms (next.js: 6ms, application-code: 289ms)
+ POST /api/waitlist 200 in 48ms (next.js: 5ms, application-code: 44ms)
+ GET /api/waitlist?code=MYESUGHG 200 in 61ms (next.js: 4ms, application-code: 57ms)
+ GET /api/waitlist?code=Z8EYD3PN 200 in 53ms (next.js: 4ms, application-code: 48ms)
+ GET / 200 in 272ms (next.js: 6ms, application-code: 266ms)
+ GET / 200 in 216ms (next.js: 11ms, application-code: 205ms)
+ GET / 200 in 290ms (next.js: 3ms, application-code: 287ms)
+✓ Compiled in 644ms
+ GET / 200 in 521ms (next.js: 33ms, application-code: 488ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headRenderTree={{...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <__next_metadata_boundary__>
+                        <div
+                          hidden={true}
+-                         bis_skin_checked="1"
+                        >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="rokkitt_f3...">
+                          <body
+                            className="flex min-h-full flex-col antialiased"
+-                           __processed_988e671d-0526-44ba-95fe-a1c7433a09e4__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ScrollHandler renderTree={{...}}>
+      <InnerScrollHandler scrollRef={{scrollRef:null, ...}} renderTree={{...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/#join" tree={[...]} params={{}} renderTree={{...}} segmentPath={[...]} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <Home>
+                          <Header>
+                            <header className="sticky top...">
+                              <div
+                                className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-5 ..."
+-                               bis_skin_checked="1"
+                              >
+                                <LinkComponent>
+                                <nav>
+                                <div
+                                  className="flex items-center gap-3"
+-                                 bis_skin_checked="1"
+                                >
+                          <main className="flex-1">
+                            <Hero>
+                              <section id="top" className="relative o...">
+                                <div
+                                  aria-hidden={true}
+                                  className="pointer-events-none absolute inset-y-0 right-0 hidden w-[38%] border-l-2 ..."
+                                  style={{backgroundImage:"url(/asset...",backgroundSize:"560px"}}
+-                                 bis_skin_checked="1"
+                                >
+                                <div
+                                  className="relative mx-auto grid w-full max-w-6xl gap-12 px-5 pt-14 pb-16 sm:px-8 md..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="rise md:col-span-6 md:pt-6"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <p>
+                                    <h1>
+                                    <p>
+                                    <div
+                                      className="mt-8 flex flex-wrap items-center gap-4"
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <div
+                                    className="relative md:col-span-6 md:pt-2"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="relative mx-auto w-full max-w-lg rotate-[-2deg]"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className="overflow-hidden rounded-[1.75rem] border-2 border-ink bg-white shad..."
+-                                       bis_skin_checked="1"
+                                      >
+                                      ...
+                            <Marquee>
+                              <div
+                                aria-hidden={true}
+                                className="overflow-hidden border-y-2 border-ink bg-ink py-4"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="marquee-track"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                            <Join>
+                              <section id="join" className="relative s...">
+                                <div
+                                  aria-hidden={true}
+                                  className="pointer-events-none absolute top-0 right-0 hidden h-72 w-72 border-b-2 bo..."
+                                  style={{backgroundImage:"url(/asset...",backgroundSize:"420px"}}
+-                                 bis_skin_checked="1"
+                                >
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <WaitlistCard>
+                                    <div
+                                      className="mt-10"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <fieldset id="perk-cards" className="scroll-mt-24">
+                                        <legend>
+                                        <div
+                                          className="grid gap-5 md:grid-cols-3"
+-                                         bis_skin_checked="1"
+                                        >
+                                      <div
+                                        className="mt-12"
+-                                       bis_skin_checked="1"
+                                      >
+                                      <form onSubmit={function handleSubmit} noValidate={true} id="almost-there" ...>
+                                        <div
+                                          className="grid gap-8 md:grid-cols-12"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="md:col-span-5"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <p>
+                                            <div
+                                              className="mt-3 rounded-2xl border-2 border-dashed border-ink/30 bg-pape..."
+-                                             bis_skin_checked="1"
+                                            >
+                                          <div
+                                            className="md:col-span-7"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h3>
+                                            <p>
+                                            <label>
+                                            <input>
+                                            <p>
+                                            <label>
+                                            <div
+                                              aria-hidden={true}
+                                              className="absolute -left-[9999px] h-px w-px overflow-hidden"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center"
+-                                             bis_skin_checked="1"
+                                            >
+                                        ...
+                            <Collection>
+                              <section id="collection" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-6"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <div
+                                    className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <a href="#join" className="flex flex-...">
+                                      <div
+-                                       bis_skin_checked="1"
+                                      >
+                                      ...
+                            <Story>
+                              <section id="story" className="scroll-mt-...">
+                                <div
+                                  className="relative mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 sm:px-8 md:grid-..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="md:col-span-5"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="relative inline-flex flex-wrap items-end gap-5"
+                                      aria-hidden={true}
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="md:col-span-7 md:pt-8"
+-                                   bis_skin_checked="1"
+                                  >
+                            <Referral>
+                              <section id="referral" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <ol>
+                                  <div
+                                    className="mt-10 flex flex-wrap items-center gap-4 rounded-2xl border-2 border-ink..."
+-                                   bis_skin_checked="1"
+                                  >
+                            <LaunchBand>
+                              <section className="border-y-2...">
+                                <div
+                                  className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 md:g..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="relative mx-auto w-full max-w-sm rotate-[2.5deg] md:mx-0"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                          <Footer>
+                            <footer className="bg-ink tex...">
+                              <div
+                                className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                                  ...
+                                <div
+                                  className="mt-12 flex flex-col gap-3 border-t border-paper/15 pt-6 text-xs text-pape..."
+-                                 bis_skin_checked="1"
+                                >
+                      ...
+                    ...
+        ...
+ 
+✓ Compiled in 924ms
+ GET / 200 in 545ms (next.js: 71ms, application-code: 474ms)
+ GET / 200 in 363ms (next.js: 172ms, application-code: 191ms)
+✓ Compiled in 303ms
+✓ Compiled in 84ms
+✓ Compiled in 39ms
+ GET / 200 in 333ms (next.js: 20ms, application-code: 314ms)
+ GET / 200 in 328ms (next.js: 37ms, application-code: 292ms)
+✓ Compiled in 161ms
+ GET / 200 in 454ms (next.js: 24ms, application-code: 430ms)
+ GET / 200 in 444ms (next.js: 34ms, application-code: 410ms)
+✓ Compiled in 121ms
+✓ Compiled in 281ms
+ GET / 200 in 403ms (next.js: 30ms, application-code: 373ms)
+ GET / 200 in 208ms (next.js: 7ms, application-code: 200ms)
+✓ Compiled in 180ms
+ GET / 200 in 243ms (next.js: 17ms, application-code: 226ms)
+ GET / 200 in 248ms (next.js: 6ms, application-code: 242ms)
+ GET / 200 in 468ms (next.js: 4ms, application-code: 465ms)
+✓ Compiled in 68ms
+ GET / 200 in 628ms (next.js: 9ms, application-code: 619ms)
+ GET / 200 in 460ms (next.js: 8ms, application-code: 452ms)
+ GET / 200 in 210ms (next.js: 7ms, application-code: 203ms)
+ GET /?v=hero2 200 in 219ms (next.js: 3ms, application-code: 216ms)
+[browser] Image with src "/assets/starburst-alpha.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+✓ Compiled in 477ms
+ GET / 200 in 658ms (next.js: 50ms, application-code: 608ms)
+ GET /?v=hero2 200 in 625ms (next.js: 325ms, application-code: 300ms)
+ GET /?v=hero3 200 in 277ms (next.js: 5ms, application-code: 272ms)
+ GET / 200 in 278ms (next.js: 3ms, application-code: 276ms)
+ GET / 200 in 372ms (next.js: 5ms, application-code: 367ms)
+ GET /?v=hero4 200 in 327ms (next.js: 3ms, application-code: 323ms)
+✓ Compiled in 98ms
+ GET / 200 in 345ms (next.js: 6ms, application-code: 339ms)
+ GET / 200 in 215ms (next.js: 7ms, application-code: 208ms)
+ GET /?v=hero4 200 in 128ms (next.js: 4ms, application-code: 124ms)
+ GET /?v=hero4 200 in 323ms (next.js: 5ms, application-code: 318ms)
+ GET / 200 in 275ms (next.js: 4ms, application-code: 271ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headRenderTree={{...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <__next_metadata_boundary__>
+                        <div
+                          hidden={true}
+-                         bis_skin_checked="1"
+                        >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="display_cb...">
+                          <body
+                            className="flex min-h-full flex-col antialiased"
+-                           __processed_47d91c8c-fdd8-4bc5-822e-12e52db1ea76__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ScrollHandler renderTree={{...}}>
+      <InnerScrollHandler scrollRef={{scrollRef:null, ...}} renderTree={{...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/#join" tree={[...]} params={{}} renderTree={{...}} segmentPath={[...]} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <Home>
+                          <Header>
+                            <header className="sticky top...">
+                              <div
+                                className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-5 ..."
+-                               bis_skin_checked="1"
+                              >
+                                <LinkComponent>
+                                <nav>
+                                <div
+                                  className="flex items-center gap-3"
+-                                 bis_skin_checked="1"
+                                >
+                          <main className="flex-1">
+                            <Hero>
+                              <section id="top" className="relative o...">
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 pt-12 pb-16 sm:px-8 md:min-h-[600p..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <img>
+                                  <div
+                                    className="relative z-0 md:max-w-[94%]"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="relative z-10 mx-auto mt-10 w-full max-w-xl md:absolute md:right-0 md:b..."
+-                                   bis_skin_checked="1"
+                                  >
+                                    <img>
+                                    <div
+                                      className="relative flex items-end justify-center md:justify-end"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className={"relative shrink-0 z-10 mb-0 "}
+                                        style={{width:"24%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-20 mb-10 -ml-[6%]"
+                                        style={{width:"27%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-30 mb-0 -ml-[6%]"
+                                        style={{width:"24%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-20 mb-7 -ml-[6%]"
+                                        style={{width:"26%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-10 mb-2 -ml-[6%]"
+                                        style={{width:"25%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                            <Marquee>
+                              <div
+                                aria-hidden={true}
+                                className="overflow-hidden border-y-2 border-ink bg-ink py-4"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="marquee-track"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                            <Join>
+                              <section id="join" className="relative s...">
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <WaitlistCard>
+                                    <div
+                                      className="mt-10"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <fieldset id="perk-cards" className="scroll-mt-24">
+                                        <legend>
+                                        <div
+                                          className="grid gap-5 md:grid-cols-3"
+-                                         bis_skin_checked="1"
+                                        >
+                                      <div
+                                        className="mt-12"
+-                                       bis_skin_checked="1"
+                                      >
+                                      <form onSubmit={function handleSubmit} noValidate={true} id="almost-there" ...>
+                                        <div
+                                          className="grid gap-8 md:grid-cols-12"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="md:col-span-5"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <p>
+                                            <div
+                                              className="mt-3 rounded-2xl border-2 border-dashed border-ink/30 bg-pape..."
+-                                             bis_skin_checked="1"
+                                            >
+                                          <div
+                                            className="md:col-span-7"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h3>
+                                            <p>
+                                            <label>
+                                            <input>
+                                            <p>
+                                            <label>
+                                            <div
+                                              aria-hidden={true}
+                                              className="absolute -left-[9999px] h-px w-px overflow-hidden"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center"
+-                                             bis_skin_checked="1"
+                                            >
+                                        ...
+                            <Collection>
+                              <section id="collection" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-6"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <div
+                                    className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <a href="#join" className="flex flex-...">
+                                      <div
+-                                       bis_skin_checked="1"
+                                      >
+                                      ...
+                            <Story>
+                              <section id="story" className="scroll-mt-...">
+                                <div
+                                  className="relative mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 sm:px-8 md:grid-..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="md:col-span-5"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="relative inline-flex flex-wrap items-end gap-5"
+                                      aria-hidden={true}
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="md:col-span-7 md:pt-8"
+-                                   bis_skin_checked="1"
+                                  >
+                            <Referral>
+                              <section id="referral" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <ol>
+                                  <div
+                                    className="mt-10 flex flex-wrap items-center gap-4 rounded-2xl border-2 border-ink..."
+-                                   bis_skin_checked="1"
+                                  >
+                            <LaunchBand>
+                              <section className="border-y-2...">
+                                <div
+                                  className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 md:g..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="relative mx-auto w-full max-w-sm rotate-[2.5deg] md:mx-0"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                          <Footer>
+                            <footer className="bg-ink tex...">
+                              <div
+                                className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                                  ...
+                                <div
+                                  className="mt-12 flex flex-col gap-3 border-t border-paper/15 pt-6 text-xs text-pape..."
+-                                 bis_skin_checked="1"
+                                >
+                      ...
+                    ...
+        ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headRenderTree={{...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <__next_metadata_boundary__>
+                        <div
+                          hidden={true}
+-                         bis_skin_checked="1"
+                        >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="display_cb...">
+                          <body
+                            className="flex min-h-full flex-col antialiased"
+-                           __processed_6fe5e462-89d5-48c7-af22-f7e2e4a5b8a3__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ScrollHandler renderTree={{...}}>
+      <InnerScrollHandler scrollRef={{scrollRef:null, ...}} renderTree={{...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/?v=hero4#top" tree={[...]} params={{}} renderTree={{...}} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <Home>
+                          <Header>
+                            <header className="sticky top...">
+                              <div
+                                className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-5 ..."
+-                               bis_skin_checked="1"
+                              >
+                                <LinkComponent>
+                                <nav>
+                                <div
+                                  className="flex items-center gap-3"
+-                                 bis_skin_checked="1"
+                                >
+                          <main className="flex-1">
+                            <Hero>
+                              <section id="top" className="relative o...">
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 pt-12 pb-16 sm:px-8 md:min-h-[600p..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <img>
+                                  <div
+                                    className="relative z-0 md:max-w-[94%]"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="relative z-10 mx-auto mt-10 w-full max-w-xl md:absolute md:right-0 md:b..."
+-                                   bis_skin_checked="1"
+                                  >
+                                    <img>
+                                    <div
+                                      className="relative flex items-end justify-center md:justify-end"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className={"relative shrink-0 z-10 mb-0 "}
+                                        style={{width:"24%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-20 mb-10 -ml-[6%]"
+                                        style={{width:"27%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-30 mb-0 -ml-[6%]"
+                                        style={{width:"24%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-20 mb-7 -ml-[6%]"
+                                        style={{width:"26%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-10 mb-2 -ml-[6%]"
+                                        style={{width:"25%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                            <Marquee>
+                              <div
+                                aria-hidden={true}
+                                className="overflow-hidden border-y-2 border-ink bg-ink py-4"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="marquee-track"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                            <Join>
+                              <section id="join" className="relative s...">
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <WaitlistCard>
+                                    <div
+                                      className="mt-10"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <fieldset id="perk-cards" className="scroll-mt-24">
+                                        <legend>
+                                        <div
+                                          className="grid gap-5 md:grid-cols-3"
+-                                         bis_skin_checked="1"
+                                        >
+                                      <div
+                                        className="mt-12"
+-                                       bis_skin_checked="1"
+                                      >
+                                      <form onSubmit={function handleSubmit} noValidate={true} id="almost-there" ...>
+                                        <div
+                                          className="grid gap-8 md:grid-cols-12"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="md:col-span-5"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <p>
+                                            <div
+                                              className="mt-3 rounded-2xl border-2 border-dashed border-ink/30 bg-pape..."
+-                                             bis_skin_checked="1"
+                                            >
+                                          <div
+                                            className="md:col-span-7"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h3>
+                                            <p>
+                                            <label>
+                                            <input>
+                                            <p>
+                                            <label>
+                                            <div
+                                              aria-hidden={true}
+                                              className="absolute -left-[9999px] h-px w-px overflow-hidden"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center"
+-                                             bis_skin_checked="1"
+                                            >
+                                        ...
+                            <Collection>
+                              <section id="collection" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-6"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <div
+                                    className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <a href="#join" className="flex flex-...">
+                                      <div
+-                                       bis_skin_checked="1"
+                                      >
+                                      ...
+                            <Story>
+                              <section id="story" className="scroll-mt-...">
+                                <div
+                                  className="relative mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 sm:px-8 md:grid-..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="md:col-span-5"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="relative inline-flex flex-wrap items-end gap-5"
+                                      aria-hidden={true}
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="md:col-span-7 md:pt-8"
+-                                   bis_skin_checked="1"
+                                  >
+                            <Referral>
+                              <section id="referral" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <ol>
+                                  <div
+                                    className="mt-10 flex flex-wrap items-center gap-4 rounded-2xl border-2 border-ink..."
+-                                   bis_skin_checked="1"
+                                  >
+                            <LaunchBand>
+                              <section className="border-y-2...">
+                                <div
+                                  className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 md:g..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="relative mx-auto w-full max-w-sm rotate-[2.5deg] md:mx-0"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                          <Footer>
+                            <footer className="bg-ink tex...">
+                              <div
+                                className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                                  ...
+                                <div
+                                  className="mt-12 flex flex-col gap-3 border-t border-paper/15 pt-6 text-xs text-pape..."
+-                                 bis_skin_checked="1"
+                                >
+                      ...
+                    ...
+        ...
+ 
+✓ Compiled in 203ms
+ GET / 200 in 607ms (next.js: 14ms, application-code: 594ms)
+ GET /?v=hero4 200 in 455ms (next.js: 6ms, application-code: 448ms)
+ GET /?v=hero4 200 in 360ms (next.js: 7ms, application-code: 353ms)
+ GET / 200 in 188ms (next.js: 7ms, application-code: 181ms)
+✓ Compiled in 85ms
+ GET /?v=hero4 200 in 603ms (next.js: 232ms, application-code: 371ms)
+ GET /?v=hero4 200 in 661ms (next.js: 14ms, application-code: 647ms)
+ GET / 200 in 652ms (next.js: 27ms, application-code: 625ms)
+ GET / 200 in 385ms (next.js: 4ms, application-code: 381ms)
+ GET / 200 in 382ms (next.js: 7ms, application-code: 374ms)
+ GET /?v=hero5 200 in 278ms (next.js: 4ms, application-code: 274ms)
+ GET /?v=shot1 200 in 306ms (next.js: 6ms, application-code: 300ms)
+ GET /?v=shot2 200 in 252ms (next.js: 5ms, application-code: 246ms)
+ GET /?v=shot3 200 in 312ms (next.js: 3ms, application-code: 309ms)
+ GET /?v=shot4 200 in 311ms (next.js: 5ms, application-code: 307ms)
+ GET /?v=shot5 200 in 279ms (next.js: 4ms, application-code: 275ms)
+ GET /?v=hero4 200 in 246ms (next.js: 3ms, application-code: 242ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headRenderTree={{...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <__next_metadata_boundary__>
+                        <div
+                          hidden={true}
+-                         bis_skin_checked="1"
+                        >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="display_cb...">
+                          <body
+                            className="flex min-h-full flex-col antialiased"
+-                           __processed_4ac1382d-0a8c-4b24-946e-d77da0b9deaf__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ScrollHandler renderTree={{...}}>
+      <InnerScrollHandler scrollRef={{scrollRef:null, ...}} renderTree={{...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/?v=hero4#top" tree={[...]} params={{}} renderTree={{...}} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <Home>
+                          <Header>
+                            <header className="sticky top...">
+                              <div
+                                className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-5 ..."
+-                               bis_skin_checked="1"
+                              >
+                                <LinkComponent>
+                                <nav>
+                                <div
+                                  className="flex items-center gap-3"
+-                                 bis_skin_checked="1"
+                                >
+                          <main className="flex-1">
+                            <Hero>
+                              <section id="top" className="relative o...">
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 pt-12 pb-16 sm:px-8 md:min-h-[660p..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <img>
+                                  <div
+                                    className="relative z-0 md:max-w-[94%]"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="relative z-10 mx-auto mt-10 w-full max-w-xl md:absolute md:right-0 md:b..."
+-                                   bis_skin_checked="1"
+                                  >
+                                    <img>
+                                    <div
+                                      className="relative flex items-end justify-center md:justify-end"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className={"relative shrink-0 z-10 mb-0 "}
+                                        style={{width:"24%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-20 mb-10 -ml-[6%]"
+                                        style={{width:"27%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-30 mb-0 -ml-[6%]"
+                                        style={{width:"24%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-20 mb-7 -ml-[6%]"
+                                        style={{width:"26%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-10 mb-2 -ml-[6%]"
+                                        style={{width:"25%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                            <Marquee>
+                              <div
+                                aria-hidden={true}
+                                className="overflow-hidden border-y-2 border-ink bg-ink py-4"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="marquee-track"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                            <Join>
+                              <section id="join" className="relative s...">
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <WaitlistCard>
+                                    <div
+                                      className="mt-10"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <fieldset id="perk-cards" className="scroll-mt-24">
+                                        <legend>
+                                        <div
+                                          className="grid gap-5 md:grid-cols-3"
+-                                         bis_skin_checked="1"
+                                        >
+                                      <div
+                                        className="mt-12"
+-                                       bis_skin_checked="1"
+                                      >
+                                      <form onSubmit={function handleSubmit} noValidate={true} id="almost-there" ...>
+                                        <div
+                                          className="grid gap-8 md:grid-cols-12"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="md:col-span-5"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <p>
+                                            <div
+                                              className="mt-3 rounded-2xl border-2 border-dashed border-ink/30 bg-pape..."
+-                                             bis_skin_checked="1"
+                                            >
+                                          <div
+                                            className="md:col-span-7"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h3>
+                                            <p>
+                                            <label>
+                                            <input>
+                                            <p>
+                                            <label>
+                                            <div
+                                              aria-hidden={true}
+                                              className="absolute -left-[9999px] h-px w-px overflow-hidden"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center"
+-                                             bis_skin_checked="1"
+                                            >
+                                        ...
+                            <Collection>
+                              <section id="collection" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-6"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <div
+                                    className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <a href="#join" className="flex flex-...">
+                                      <div
+-                                       bis_skin_checked="1"
+                                      >
+                                      ...
+                            <Story>
+                              <section id="story" className="scroll-mt-...">
+                                <div
+                                  className="relative mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 sm:px-8 md:grid-..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="md:col-span-5"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="relative inline-flex flex-wrap items-end gap-5"
+                                      aria-hidden={true}
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="md:col-span-7 md:pt-8"
+-                                   bis_skin_checked="1"
+                                  >
+                            <Referral>
+                              <section id="referral" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <ol>
+                                  <div
+                                    className="mt-10 flex flex-wrap items-center gap-4 rounded-2xl border-2 border-ink..."
+-                                   bis_skin_checked="1"
+                                  >
+                            <LaunchBand>
+                              <section className="border-y-2...">
+                                <div
+                                  className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 md:g..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="relative mx-auto w-full max-w-sm rotate-[2.5deg] md:mx-0"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                          <Footer>
+                            <footer className="bg-ink tex...">
+                              <div
+                                className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                                  ...
+                                <div
+                                  className="mt-12 flex flex-col gap-3 border-t border-paper/15 pt-6 text-xs text-pape..."
+-                                 bis_skin_checked="1"
+                                >
+                      ...
+                    ...
+        ...
+ 
+✓ Compiled in 245ms
+ GET /?v=hero4 200 in 680ms (next.js: 24ms, application-code: 657ms)
+ GET / 200 in 666ms (next.js: 52ms, application-code: 614ms)
+ GET /?v=hero5 200 in 586ms (next.js: 237ms, application-code: 349ms)
+ GET / 200 in 210ms (next.js: 14ms, application-code: 196ms)
+✓ Compiled in 110ms
+ GET / 200 in 794ms (next.js: 12ms, application-code: 782ms)
+ GET /?v=hero4 200 in 791ms (next.js: 29ms, application-code: 762ms)
+ GET /?v=hero5 200 in 486ms (next.js: 7ms, application-code: 479ms)
+ GET / 200 in 214ms (next.js: 6ms, application-code: 208ms)
+ GET /?v=shot6 200 in 257ms (next.js: 3ms, application-code: 254ms)
+ GET /?v=hero4 200 in 273ms (next.js: 3ms, application-code: 269ms)
+ GET / 200 in 704ms (next.js: 3ms, application-code: 701ms)
+ GET /?v=hero5 200 in 693ms (next.js: 10ms, application-code: 683ms)
+ GET / 200 in 247ms (next.js: 3ms, application-code: 243ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headRenderTree={{...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <__next_metadata_boundary__>
+                        <div
+                          hidden={true}
+-                         bis_skin_checked="1"
+                        >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="display_cb...">
+                          <body
+                            className="flex min-h-full flex-col antialiased"
+-                           __processed_617f8458-6912-457a-9f24-fe1d2445bcba__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ScrollHandler renderTree={{...}}>
+      <InnerScrollHandler scrollRef={{scrollRef:null, ...}} renderTree={{...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/?v=hero4#top" tree={[...]} params={{}} renderTree={{...}} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <Home>
+                          <Header>
+                            <header className="sticky top...">
+                              <div
+                                className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-5 ..."
+-                               bis_skin_checked="1"
+                              >
+                                <LinkComponent>
+                                <nav>
+                                <div
+                                  className="flex items-center gap-3"
+-                                 bis_skin_checked="1"
+                                >
+                          <main className="flex-1">
+                            <Hero>
+                              <section id="top" className="relative o...">
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 pt-12 pb-16 sm:px-8 md:min-h-[660p..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <img>
+                                  <div
+                                    className="relative z-0 md:max-w-[94%]"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="relative z-10 mx-auto mt-10 w-full max-w-xl md:absolute md:right-0 md:b..."
+-                                   bis_skin_checked="1"
+                                  >
+                                    <img>
+                                    <div
+                                      className="relative flex items-end justify-center md:justify-end"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className={"relative shrink-0 z-10 mb-0 "}
+                                        style={{width:"24%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-20 mb-10 -ml-[6%]"
+                                        style={{width:"27%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-30 mb-0 -ml-[6%]"
+                                        style={{width:"24%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-20 mb-7 -ml-[6%]"
+                                        style={{width:"26%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-10 mb-2 -ml-[6%]"
+                                        style={{width:"25%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                            <Marquee>
+                              <div
+                                aria-hidden={true}
+                                className="overflow-hidden border-y-2 border-ink bg-ink py-4"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="marquee-track"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                            <Join>
+                              <section id="join" className="relative s...">
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <WaitlistCard>
+                                    <div
+                                      className="mt-10"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <fieldset id="perk-cards" className="scroll-mt-24">
+                                        <legend>
+                                        <div
+                                          className="grid gap-5 md:grid-cols-3"
+-                                         bis_skin_checked="1"
+                                        >
+                                      <div
+                                        className="mt-12"
+-                                       bis_skin_checked="1"
+                                      >
+                                      <form onSubmit={function handleSubmit} noValidate={true} id="almost-there" ...>
+                                        <div
+                                          className="grid gap-8 md:grid-cols-12"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="md:col-span-5"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <p>
+                                            <div
+                                              className="mt-3 rounded-2xl border-2 border-dashed border-ink/30 bg-pape..."
+-                                             bis_skin_checked="1"
+                                            >
+                                          <div
+                                            className="md:col-span-7"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h3>
+                                            <p>
+                                            <label>
+                                            <input>
+                                            <p>
+                                            <label>
+                                            <div
+                                              aria-hidden={true}
+                                              className="absolute -left-[9999px] h-px w-px overflow-hidden"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center"
+-                                             bis_skin_checked="1"
+                                            >
+                                        ...
+                            <Collection>
+                              <section id="collection" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-6"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <div
+                                    className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <a href="#join" className="flex flex-...">
+                                      <div
+-                                       bis_skin_checked="1"
+                                      >
+                                      ...
+                            <Story>
+                              <section id="story" className="scroll-mt-...">
+                                <div
+                                  className="relative mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 sm:px-8 md:grid-..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="md:col-span-5"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="relative inline-flex flex-wrap items-end gap-5"
+                                      aria-hidden={true}
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="md:col-span-7 md:pt-8"
+-                                   bis_skin_checked="1"
+                                  >
+                            <Referral>
+                              <section id="referral" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <ol>
+                                  <div
+                                    className="mt-10 flex flex-wrap items-center gap-4 rounded-2xl border-2 border-ink..."
+-                                   bis_skin_checked="1"
+                                  >
+                            <LaunchBand>
+                              <section className="border-y-2...">
+                                <div
+                                  className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 md:g..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="relative mx-auto w-full max-w-sm rotate-[2.5deg] md:mx-0"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                          <Footer>
+                            <footer className="bg-ink tex...">
+                              <div
+                                className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                                  ...
+                                <div
+                                  className="mt-12 flex flex-col gap-3 border-t border-paper/15 pt-6 text-xs text-pape..."
+-                                 bis_skin_checked="1"
+                                >
+                      ...
+                    ...
+        ...
+ 
+[browser] Image with src "/assets/starburst-alpha.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+ GET /?v=hero5 200 in 930ms (next.js: 53ms, application-code: 877ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headRenderTree={{...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <__next_metadata_boundary__>
+                        <div
+                          hidden={true}
+-                         bis_skin_checked="1"
+                        >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="display_cb...">
+                          <body
+                            className="flex min-h-full flex-col antialiased"
+-                           __processed_f77e7c3f-a4c0-4980-8da2-6f932a4ea37d__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ScrollHandler renderTree={{...}}>
+      <InnerScrollHandler scrollRef={{scrollRef:null, ...}} renderTree={{...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/?v=hero5#top" tree={[...]} params={{}} renderTree={{...}} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <Home>
+                          <Header>
+                            <header className="sticky top...">
+                              <div
+                                className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-5 ..."
+-                               bis_skin_checked="1"
+                              >
+                                <LinkComponent>
+                                <nav>
+                                <div
+                                  className="flex items-center gap-3"
+-                                 bis_skin_checked="1"
+                                >
+                          <main className="flex-1">
+                            <Hero>
+                              <section id="top" className="relative o...">
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 pt-12 pb-16 sm:px-8 md:min-h-[660p..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <img>
+                                  <div
+                                    className="relative z-0 md:max-w-[94%]"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="relative z-10 mx-auto mt-10 w-full max-w-xl md:absolute md:right-0 md:b..."
+-                                   bis_skin_checked="1"
+                                  >
+                                    <img>
+                                    <div
+                                      className="relative flex items-end justify-center md:justify-end"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className={"relative shrink-0 z-10 mb-0 "}
+                                        style={{width:"24%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-20 mb-10 -ml-[6%]"
+                                        style={{width:"27%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-30 mb-0 -ml-[6%]"
+                                        style={{width:"24%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-20 mb-7 -ml-[6%]"
+                                        style={{width:"26%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="relative shrink-0 z-10 mb-2 -ml-[6%]"
+                                        style={{width:"25%"}}
+-                                       bis_skin_checked="1"
+                                      >
+                            <Marquee>
+                              <div
+                                aria-hidden={true}
+                                className="overflow-hidden border-y-2 border-ink bg-ink py-4"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="marquee-track"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+                                    className="flex shrink-0 items-center gap-10 pr-10"
+                                    aria-hidden={true}
+-                                   bis_skin_checked="1"
+                                  >
+                            <Join>
+                              <section id="join" className="relative s...">
+                                <div
+                                  className="relative mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <WaitlistCard>
+                                    <div
+                                      className="mt-10"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <fieldset id="perk-cards" className="scroll-mt-24">
+                                        <legend>
+                                        <div
+                                          className="grid gap-5 md:grid-cols-3"
+-                                         bis_skin_checked="1"
+                                        >
+                                      <div
+                                        className="mt-12"
+-                                       bis_skin_checked="1"
+                                      >
+                                      <form onSubmit={function handleSubmit} noValidate={true} id="almost-there" ...>
+                                        <div
+                                          className="grid gap-8 md:grid-cols-12"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="md:col-span-5"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <p>
+                                            <div
+                                              className="mt-3 rounded-2xl border-2 border-dashed border-ink/30 bg-pape..."
+-                                             bis_skin_checked="1"
+                                            >
+                                          <div
+                                            className="md:col-span-7"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h3>
+                                            <p>
+                                            <label>
+                                            <input>
+                                            <p>
+                                            <label>
+                                            <div
+                                              aria-hidden={true}
+                                              className="absolute -left-[9999px] h-px w-px overflow-hidden"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center"
+-                                             bis_skin_checked="1"
+                                            >
+                                        ...
+                            <Collection>
+                              <section id="collection" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-6"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <div
+                                    className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <ProductCard>
+                                      <article className="group rela...">
+                                        <div
+                                          className="relative aspect-[4/5] overflow-hidden bg-[#ececec]"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="flex flex-1 flex-col gap-1.5 p-5 sm:p-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                    <a href="#join" className="flex flex-...">
+                                      <div
+-                                       bis_skin_checked="1"
+                                      >
+                                      ...
+                            <Story>
+                              <section id="story" className="scroll-mt-...">
+                                <div
+                                  className="relative mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 sm:px-8 md:grid-..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="md:col-span-5"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="relative inline-flex flex-wrap items-end gap-5"
+                                      aria-hidden={true}
+-                                     bis_skin_checked="1"
+                                    >
+                                  <div
+                                    className="md:col-span-7 md:pt-8"
+-                                   bis_skin_checked="1"
+                                  >
+                            <Referral>
+                              <section id="referral" className="scroll-mt-...">
+                                <div
+                                  className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                  <ol>
+                                  <div
+                                    className="mt-10 flex flex-wrap items-center gap-4 rounded-2xl border-2 border-ink..."
+-                                   bis_skin_checked="1"
+                                  >
+                            <LaunchBand>
+                              <section className="border-y-2...">
+                                <div
+                                  className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 md:g..."
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+                                    className="relative mx-auto w-full max-w-sm rotate-[2.5deg] md:mx-0"
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                          <Footer>
+                            <footer className="bg-ink tex...">
+                              <div
+                                className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8"
+-                               bis_skin_checked="1"
+                              >
+                                <div
+                                  className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                                  ...
+                                <div
+                                  className="mt-12 flex flex-col gap-3 border-t border-paper/15 pt-6 text-xs text-pape..."
+-                                 bis_skin_checked="1"
+                                >
+                      ...
+                    ...
+        ...
+ 
+[?25h
